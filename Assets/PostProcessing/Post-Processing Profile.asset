@@ -1,0 +1,374 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
+  m_Name: Post-Processing Profile
+  m_EditorClassIdentifier: 
+  bloom:
+    m_Enabled: 1
+    m_Settings:
+      bloom:
+        intensity: 0.27
+        threshold: 0.54
+        thresholdMax: 0.27
+        softKnee: 0.45
+        radius: 4.5
+  grab:
+    m_Enabled: 0
+    m_Settings:
+      resolution: 1
+      cameraEvent: 11
+  fogModel:
+    m_Enabled: 0
+    m_Settings:
+      fogColor: {r: 1, g: 1, b: 1, a: 1}
+      fogDensity: 0.25
+      speed: {x: 0, y: 0}
+      digRadius: 0.27
+      disturbance: 0.36
+      disturbanceTex: {fileID: 0}
+  greyMode:
+    m_Enabled: 0
+  ambientOcclusion:
+    m_Enabled: 0
+    m_Settings:
+      intensity: 0.57
+      radius: 0.23
+      downsampling: 1
+      forceForwardCompatibility: 0
+      ambientOnly: 0
+      highPrecision: 0
+  cameraFilterModel:
+    m_Enabled: 0
+    AutoDisable: 1
+    m_Settings:
+      mBloodOnScreen:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Blood_On_Screen: 1
+        Blood_Color: {r: 1, g: 0, b: 0, a: 1}
+        Blood_Intensify: 0.7
+        Blood_Darkness: 0.5
+        Blood_Distortion_Speed: 0.25
+        Blood_Fade: 1
+      mDistortionAspiration:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Value: 0.8
+        PosX: 0.5
+        PosY: 0.5
+      mDistortionDream:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Distortion: 6
+        Speed: 5
+      mDistortionNoise:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Distortion: 1
+      mDistortionWaveHorizontal:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        WaveIntensity: 32
+      mDrawingBluePrint:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Pencil_Color: {r: 1, g: 1, b: 1, a: 1}
+        Pencil_Size: 0.0008
+        Pencil_Correction: 0.76
+        Intensity: 1
+        Speed_Animation: 1
+        Corner_Lose: 0.5
+        Fade_Paper_to_BackColor: 0.2
+        Fade_With_Original: 1
+        Back_Color: {r: 0.175, g: 0.402, b: 0.687, a: 1}
+      mDrawingCellShading:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        EdgeSize: 0.1
+        ColorLevel: 4
+      mDrawingPaper:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Pencil_Color: {r: 0, g: 0, b: 0, a: 0}
+        Pencil_Size: 0.00125
+        Pencil_Correction: 0.35
+        Intensity: 1
+        Speed_Animation: 1
+        Corner_Lose: 1
+        Fade_Paper_to_BackColor: 0
+        Fade_With_Original: 1
+        Back_Color: {r: 1, g: 1, b: 1, a: 1}
+      mEyeVision:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        _EyeWave: 15
+        _EyeSpeed: 1
+        _EyeMove: 2
+        _EyeBlink: 1
+      mFXDrunk:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Value: 6
+        Speed: 1
+        Wavy: 1
+        Distortion: 0
+        DistortionWave: 0
+        Fade: 1
+        ColoredSaturate: 1
+        ColoredChange: 0
+        ChangeRed: 0
+        ChangeGreen: 0
+        ChangeBlue: 0
+      mFXEarthQuake:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Speed: 15
+        X: 0.008
+        Y: 0.008
+      mLightWave:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Speed: 0.2
+        Speed_X: 0.2
+        Speed_Y: 0.3
+        Intensity: 2.4
+      mRainFX:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Speed: 1
+        Fade: 1
+        Count: 0
+      mVHSTracking:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        Tracking: 1
+      mVisionBloodFast:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        HoleSize: 0.6
+        HoleSmooth: 0.3
+        Color1: 0.2
+        Color2: 0.9
+      mVisionWarp:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        IsLoop: 1
+        OnceStartVal: 0
+        Value: 0.5
+        Value2: 0.2
+        Intensity: 1
+      mScorching:
+        Mat: {fileID: 0}
+        mIsDelayShow: 0
+        mFromValue: 0
+        mToValue: 1
+        mDelayShow: 0
+        order: 0
+        WaveSpeed: 1
+        WaveStrength: 0.141
+        Distortion: 0.1
+        DistortionWave: 0
+        Fade: 0.121
+        ColorSaturate: -1.76
+    filterList:
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+    - Mat: {fileID: 0}
+      mIsDelayShow: 0
+      mFromValue: 0
+      mToValue: 1
+      mDelayShow: 0
+      order: 0
+  depthMode:
+    m_Enabled: 1
+    m_Settings:
+      depthMode: 1
+  debugViewModel:
+    m_Enabled: 0
+    m_Settings:
+      mViewType: 0
+  monitors:
+    currentMonitorID: 0
+    refreshOnPlay: 0
+    histogramMode: 3
+    waveformExposure: 0.12
+    waveformY: 0
+    waveformR: 1
+    waveformG: 1
+    waveformB: 1
+    paradeExposure: 0.12
+    vectorscopeExposure: 0.12
+    vectorscopeShowBackground: 1

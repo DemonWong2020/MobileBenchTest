@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 27cb06bd83c523c42ac57d85e0bd6bd8
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _DissolveMap: {fileID: 2800000, guid: 16e52762fca4e504cac0f6e8721da1d0, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: shaders-teon2-character
+  assetBundleVariant: 
