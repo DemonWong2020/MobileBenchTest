@@ -32,29 +32,26 @@ public class PerformScript : MonoBehaviour
 
         FPS = 45;
         CreateTimes = 6;
-        removePostEffect = false;
         EnableBloom = true;
     }
 
     public static void DownSample()
     {
-        ScreenWidth = ScreenWidth * 0.75f;
-        ScreenHeight = ScreenHeight * 0.75f;
+        ScreenWidth = Screen.width * 0.75f;
+        ScreenHeight = Screen.height * 0.75f;
 
         FPS = 45;
-        CreateTimes = 4;
-        removePostEffect = true;
+        CreateTimes = 6;
         EnableBloom = false;
     }
 
     public static void DeSample()
     {     
         Debug.Log("DeSample " + ScreenWidth + "    "+ ScreenHeight);
-        ScreenWidth = ScreenWidth * 0.5f;
-        ScreenHeight = ScreenHeight * 0.5f;
+        ScreenWidth = Screen.width * 0.5f;
+        ScreenHeight = Screen.height * 0.5f;
         FPS = 30;
-        CreateTimes = 2;
-        removePostEffect = true;
+        CreateTimes = 6;
         EnableBloom = false;
     }
 
